@@ -1,5 +1,5 @@
 void main() {
-  Television.activate();
+  Television.turnOn();
 }
 
 class Television {
@@ -9,9 +9,16 @@ class Television {
     turnOn();
   }
 
-  /// Turns the TV's power on.
+  @Todo('me', "code")
   static void turnOn() {
     print('Turn on TV');
   }
   // ···
+}
+
+class Todo {
+  final String who;
+  final String what;
+
+  const Todo(this.who, this.what);
 }
